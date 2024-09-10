@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Material Escolar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="btn-container">
+            <button id="increase-font" title="Aumentar fonte">A +</button>
+            <button id="decrease-font" title="Diminuir fonte">A -</button>
+            <button id="toggle-mode">Alterar Modo</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <img src="img/banner.png" alt="Banner promocional de material escolar">
+        </section>
+
+        <h2>Nossos Produtos</h2>
+        <section id="products" class="products">
+            <div class="product">
+                <img src="img/caderno.webp" alt="Caderno espiral 200 folhas">
+                <h3>Caderno Espiral 200 Folhas</h3>
+                <p>Perfeito para anotações diárias e organização dos estudos.</p>
+                <span>R$ 29,99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/garrafa.webp" alt="Garrafa Preta Térmica de 900ml">
+                <h3>Garrafa Preta Térmica de 900ml</h3>
+                <p>Perfeita para manter a sua água sempre gelada.</p>
+                <span>R$ 69,99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/estojo.webp" alt="Estojo preto com duas divisórias">
+                <h3>Estojo com Duas Divisórias</h3>
+                <p>Perfeito para guardar suas canetas, lapiseiras e lápis de cor.</p>
+                <span>R$ 59,99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="img/mochila.avif" alt="Mochila escolar resistente">
+                <h3>Mochila Escolar Resistente</h3>
+                <p>Ideal para carregar todos os seus materiais com conforto e estilo.</p>
+                <span>R$ 149,99</span>
+                <button>Comprar</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>A EducaMais nasceu da paixão pela educação e pelo desejo de proporcionar aos estudantes o melhor suporte para suas jornadas acadêmicas. Fundada em 2024, nossa loja surgiu com o objetivo de ser um ponto de referência em materiais escolares, oferecendo produtos de alta qualidade para alunos de todas as idades.</p>
+            <p>Nossa história começa com um pequeno grupo de educadores e empreendedores que, ao perceberem a necessidade de uma loja especializada em material escolar, decidiram unir suas forças para criar um espaço onde pais e alunos pudessem encontrar tudo o que precisam para o sucesso escolar. Desde o início, nosso compromisso foi oferecer produtos que não só atendem às necessidades escolares, mas que também inspiram a criatividade e o entusiasmo pelo aprendizado.</p>
+            <p>Na EducaMais, acreditamos que um bom material escolar faz toda a diferença no desempenho e na motivação dos alunos. Por isso, selecionamos cuidadosamente cada item que oferecemos, buscando sempre qualidade, inovação e funcionalidade. Nosso portfólio inclui desde cadernos e mochilas até materiais de arte e tecnologia, tudo pensado para apoiar o desenvolvimento e o crescimento acadêmico.</p>
+            <p>Com um atendimento personalizado e uma equipe dedicada, nossa missão é tornar a experiência de compra agradável e eficiente, garantindo que você encontre o que precisa com rapidez e confiança. Estamos aqui para apoiar cada etapa da sua jornada educacional, oferecendo mais do que produtos, mas também um compromisso com a excelência em educação.</p>
+            <p>Venha nos visitar e descubra por que a EducaMais é a escolha preferida de tantos estudantes e famílias. Juntos, podemos transformar o aprendizado em uma experiência ainda mais enriquecedora!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <form action="/enviar" method="post">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Sua mensagem" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Material Escolar. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
