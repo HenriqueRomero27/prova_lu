@@ -142,22 +142,27 @@ main {
 
 /* About Section */
 #about {
-    padding: 0 1rem 2rem 1rem;
+    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+body.dark-mode #aboutUsText {
+    color: #FFF;
 }
 
 #about h2 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
     color: #333;
-    text-align: center;
 }
 
 #about p {
     margin-bottom: 1rem;
     line-height: 1.8;
-    text-align: center;
 }
 
 /* Contact Form */
@@ -198,6 +203,7 @@ form textarea {
 
 form button {
     padding: 0.75rem 1.5rem;
+    width: 100%;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
@@ -245,9 +251,97 @@ header.dark-mode {
     background-color: #1f1f1f;
 }
 
-header nav li a.dark-mode {
+/* About Section Card */
+
+.about-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto; /* Adiciona espaço em cima e embaixo */
+}
+
+.about-image {
+    flex: 1;
+    max-width: 200px; /* Limita a largura da imagem */
+    margin-right: 2rem; /* Espaço entre imagem e texto */
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 2; /* Permite que o texto ocupe o restante do espaço */
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+
+body.dark-mode header nav li a {
     color: #FFF;
 }
+
+body.dark-mode main #about h2 {
+    color: #FFF;
+}
+
+body.dark-mode .product {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .product h3, body.dark-mode .product span {
+    color: #FFF;
+}
+
+body.dark-mode #contact form {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode #contact form label {
+    color: #FFF;
+}
+
+body.dark-mode #contact form input, body.dark-mode #contact form textarea{
+    background-color: #333;
+    color: #FFF;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode footer p {
+    color: #FFF;
+}
+
+/* Estilos para o modo escuro na seção Sobre Nós */
+body.dark-mode .about-card {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+body.dark-mode .about-image {
+    border: 1px solid #333; /* Opcional: para destacar a imagem no modo escuro */
+}
+
+body.dark-mode .about-text h2 {
+    color: #FFF;
+}
+
+body.dark-mode .about-text p {
+    color: #e0e0e0; /* Cor do texto no modo escuro */
+}
+
 
 .large-font {
     font-size: 1.2em;
